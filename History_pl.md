@@ -38,4 +38,4 @@ strefy pośredniej promieniowania elektromagnetycznego.
 Maksymalne odchylenie szczytu masztu przy silnym wietrze wynosi 1.5m.
 Waga masztów: 304 tony.
 
-Czas wejścia na szczyt masztu wysportowanego człowieka: 1 godzina.
+Czas wejścia na szczyt masztu wysportowanego człowieka: 1 godzina
