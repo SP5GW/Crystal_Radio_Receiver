@@ -1,4 +1,4 @@
-# Tuned_Radio_Frequency_AM_Receiver
+# Tuned Radio Frequency AM Receiver
 
 This implementation in its simplest form does not include active amplifier and that is why can be used without external power supply. 
 
@@ -58,7 +58,7 @@ Acustic signal at the output of the detector stage is biased towards higher freq
 
 To further increase amplification LM386 based power amp can be used.
 
-#Resources
+# Resources
 [1] Swiat Radio 4/2014, Building Simplest Radio, http://www.swiatradio.com.pl/virtual/
 [2] Library of Polish Radio Amateur, Issue 54: Simple Amateur Receivers, Part I, https://bpk.pzk.org.pl/
 [3] Parallel Tuning Circuit by Marcin Swietlinski SP5NJW, https://sem.pl/sp5jnw/technika/technika.html
