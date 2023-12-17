@@ -1,5 +1,5 @@
-# Na podstawie informacji umieszczonej przed budynkiem 
-# Radiowego Centrum Nadawczego (RCN) w Solcu Kujawskim
+## Na podstawie informacji umieszczonej przed budynkiem 
+## Radiowego Centrum Nadawczego (RCN) w Solcu Kujawskim
 
 Polskie Radio
 Radiowe Centrum Nadawcze w Solcu Kujawskim
