@@ -9,6 +9,15 @@ emitting The First Programme of the Polish Radio on long wave 225kHz frequency s
 Its range covers the whole of Poland and partly neighbouring countries and, in favourable conditions, 
 further European countries.
 
+<p align="center">
+<img src="./img/SolecKujawskiSite/SolecKujawski_1.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_4.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_6.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_8.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_9.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_10.jpg" width="300" height="300"/>
+</p>
+
 A full solution provider of the latest generation of broadcasting equipment and antenna system
 is the French company THOMCAST.
 
@@ -40,3 +49,10 @@ The maximum deviation of the top of the mast in strong winds is 1.5m.
 Weight of masts: 304 tons.
 
 Time to climb to the top of the mast by well-conditioned person is: 1 hour.
+
+Coverage map and signal level registered at Otwock near Warsaw:
+
+<p align="center">
+<img src="./img/SignalStrength/polish_radio_1_coverage_map.jpg" width="300" height="300"/>
+<img src="./img/SignalStrength/polish_radio_1_signal_strength.png" width="300" height="300"/>
+</p>
