@@ -60,7 +60,10 @@ To increase signal output and allow for use of 32ohm modern headphones simple 2 
 
 Acustic signal at the output of the detector stage is biased towards higher frequencies. To correct for it low-pass filter is introduced together with volume control. Filtering introduces attenuation and it shall not be used in configuration with high impedance earphones.
 
->ACUSTIC SIGNAL PICTURE<
+<p align="center">
+<img src="./img/Measurements/Max_Amplified_Output_Signal.jpg" width="300" height="300"/>
+<img src="./img/Measurements/Max_Amplified_Output_Signal_Measurements.jpg" width="300" height="300"/>
+</p>
 
 To further increase amplification LM386 based power amp can be used.
 
