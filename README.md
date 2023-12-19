@@ -3,7 +3,7 @@
 This implementation in its simplest form does not include active amplifier and that is why can be used without external power supply. 
 
 <p align="center">
-<img src="./img/TRF_Receiver_Schematics.png" width="700" height="500"/>
+<img src="./img/TRF_Receiver_Schematics.png" width="700" height="400"/>
 </p>
 
 Parallel LC tank and detector stage in proposed configuration were often used in early radio receivers called crystal radio. In the circuit discussed here, crystal has been replaced with germanium diode. Half-wave rectifier has been also replaced with full rectifier. 
