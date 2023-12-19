@@ -37,7 +37,10 @@ Cparacitic (value of paracitic capacitance introduced in the coil) equals to ...
 
 Simulated characteristic of LC tank can be seen below:
 
->LC + DETECTOR FREQ RESP PICTURES<
+<p align="center">
+<img src="./img/ReceiverPhotos/IMG_1019_radio_internal.jpg" width="300" height="300"/>
+<img src="./img/ReceiverPhotos/IMG_1021_radio_internal.jpg" width="300" height="300"/>
+</p>
 
 Tap on the coil does not impact resonance frequency, however level of magnetic coupling shall be taken into account when calculating inductance value of the coil i.e. total inductance is higher then the sum of inductances of each section of the coil measured separately.
 
