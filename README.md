@@ -18,7 +18,7 @@ Mechanical mounting of the coil can be difficult. The most elegant would be to 3
 
 Value of LC tank elements can be calculated from the following formula:
 
-                                                      $fr = 1/[2*PI*SQRT(L*(Cparacetic+C))]$
+                                                      $ fr = 1/[2*PI*SQRT(L*(Cparacetic+C))] $
 
 where fr = 225kHz
       L = (measured between ends of two sections - see picture below)
@@ -59,6 +59,7 @@ Acustic signal at the output of the detector stage is biased towards higher freq
 To further increase amplification LM386 based power amp can be used.
 
 ## Resources
-      [1] Swiat Radio 4/2014, Building Simplest Radio, http://www.swiatradio.com.pl/virtual/
-      [2] Library of Polish Radio Amateur, Issue 54: Simple Amateur Receivers, Part I, https://bpk.pzk.org.pl/
-      [3] Parallel Tuning Circuit by Marcin Swietlinski SP5NJW, https://sem.pl/sp5jnw/technika/technika.html
+
+[1] Swiat Radio 4/2014, Building Simplest Radio, http://www.swiatradio.com.pl/virtual/
+[2] Library of Polish Radio Amateur, Issue 54: Simple Amateur Receivers, Part I, https://bpk.pzk.org.pl/
+[3] Parallel Tuning Circuit by Marcin Swietlinski SP5NJW, https://sem.pl/sp5jnw/technika/technika.html
