@@ -14,7 +14,10 @@ Design of the coil is critical for entire circuit to work. This element has been
 
 Mechanical mounting of the coil can be difficult. The most elegant would be to 3D print required moutning brackets. In this case simpler wooden mounts were used purely due to lack 3D printer access. See pictures below for details of coil mounting method:
 
->COIL MOUNTING PICTURE<
+<p align="center">
+<img src="./img/ReceiverPhotos/IMG_1012_coil_mount.jpg" width="300" height="300"/>
+<img src="./img/ReceiverPhotos/IMG_1013_coil_mount.jpg" width="300" height="300"/>
+</p>
 
 Value of LC tank elements can be calculated from the following formula:
 
