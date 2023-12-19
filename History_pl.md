@@ -9,6 +9,16 @@ emitująca od 4 września 1999 r., na falach długich sygnał o częstotliwości
 Program Pierwszy Polskiego Radia. Swym zasięgiem obejmująca całą Polskę i częściowo
 kraje sąsiadujące, a przy sprzyjających warunkach dalcze kraje europejskie.
 
+<p align="center">
+<img src="./img/SolecKujawskiSite/SolecKujawski_1.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_2.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_4.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_6.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_8.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_9.jpg" width="300" height="300"/>
+<img src="./img/SolecKujawskiSite/SolecKujawski_10.jpg" width="300" height="300"/>
+</p>
+
 Kompleksowym dostawcą aparatury nadawczej najnowszej generacji i systemu antenowego
 jest francuska firma THOMCAST.
 
@@ -39,3 +49,10 @@ Maksymalne odchylenie szczytu masztu przy silnym wietrze wynosi 1.5m.
 Waga masztów: 304 tony.
 
 Czas wejścia na szczyt masztu wysportowanego człowieka: 1 godzina
+
+Mapa zasięgu oraz poziom sygnału zarejestrowany w Otwocku pod Warszawą:
+
+<p align="center">
+<img src="./img/SignalStrength/polish_radio_1_coverage_map.jpg" width="300" height="300"/>
+<img src="./img/SignalStrength/polish_radio_1_signal_strength.png" width="300" height="300"/>
+</p>
