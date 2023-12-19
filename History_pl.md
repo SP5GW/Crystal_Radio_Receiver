@@ -11,7 +11,6 @@ kraje sąsiadujące, a przy sprzyjających warunkach dalcze kraje europejskie.
 
 <p align="center">
 <img src="./img/SolecKujawskiSite/SolecKujawski_1.jpg" width="300" height="300"/>
-<img src="./img/SolecKujawskiSite/SolecKujawski_2.jpg" width="300" height="300"/>
 <img src="./img/SolecKujawskiSite/SolecKujawski_4.jpg" width="300" height="300"/>
 <img src="./img/SolecKujawskiSite/SolecKujawski_6.jpg" width="300" height="300"/>
 <img src="./img/SolecKujawskiSite/SolecKujawski_8.jpg" width="300" height="300"/>
