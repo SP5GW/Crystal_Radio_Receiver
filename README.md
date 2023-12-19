@@ -18,7 +18,7 @@ Mechanical mounting of the coil can be difficult. The most elegant would be to 3
 
 Value of LC tank elements can be calculated from the following formula:
 
-                                                      $ fr = 1/[2*PI*SQRT(L*(Cparacetic+C))] $
+$fr = 1/[2*PI*SQRT(L*(Cparacetic+C))]$
 
 where fr = 225kHz
       L = (measured between ends of two sections - see picture below)
