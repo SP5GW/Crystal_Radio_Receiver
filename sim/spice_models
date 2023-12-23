@@ -1,0 +1,8 @@
+* Diodes used to model rectifier circuit
+* Source: https://www.ltwiki.org/index.php?title=Standard.dio
+
+.MODEL 1N34A D(IS=2.6u RS=6.5 N=1.6 CJO=0.8p EG=0.67 BV=25 IBV=0.003 Type=GePunctualContact)
+.model AAP153 D(bv=30 cjo=0.5e-12 eg=0.67 ibv=30e-6 is=2e-7 rs=7 n=1.3 vj=0.1 m=0.27 mfg=Solid_States_Inc. type=Germanium)
+.model D311A d(IS=8u N=1.483 RS=1.85 m=0.22 Vj=0.1 Cjo=3.5pF IBV=1.00E-04 BV=30 TT=20n EG=0.67 XTI=3 Iave=80m Vpk=30 mfg=USSR type=germanium)
+.model D18 d(IS=4u N=2.15 RS=17 m=0.124 Vj=0.1 Cjo=0.67pF IBV=2u BV=20 TT=5n EG=0.67 XTI=3 Iave=16m Vpk=20 mfg=USSR type=germanium)
+.MODEL AEG_AA112 D(IS=2.777779u RS=35.67365 BV=20 IBV=0.0022 CJO=1p TT=1p M=0.5 VJ=1 N=2.172326 EG=0.67 FC=0.5 type=germanium)
