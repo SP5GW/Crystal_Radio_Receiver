@@ -42,7 +42,7 @@ Theory of operation has been predicted during Spice simulations. Details of tech
 
 
 <p align="center">
-<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram.jpg" width="600" height="400"/>
+<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram.jpg" width="500" height="300"/>
 </p>
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
