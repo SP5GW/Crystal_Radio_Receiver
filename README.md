@@ -1,18 +1,49 @@
-# Tuned Radio Frequency AM Receiver
+# Crystal Radio Receiver
 
-This implementation in its simplest form does not include active amplifier and that is why can be used without external power supply. 
+## Design Overview
+
+Implementation of crystal radio in its simplest form does not include active amplifier and that is why can function without external power supply. 
 
 <p align="center">
-<img src="./img/TRF_Receiver_Schematics.png" width="800" height="400"/>
+<img src="./img/Drawings/crystal_radio_simplest_implementation.jpg" width="800" height="400"/>
 </p>
 
-Parallel LC tank and detector stage in proposed configuration were often used in early radio receivers called crystal radio. In the circuit discussed here, crystal has been replaced with germanium diode. Half-wave rectifier has been also replaced with full rectifier. 
+There are three building blocks of such radio: bandpass filter based on RLC circuit, detector/demodulator stage and high impedance headphones (common today 32ohm headphones can be used as well, but would require amplification stage).
 
-Experiments were made with use of more comon Shotkeys diodes, but were not successful (not possible to detect any signals). There was no noticable difference in volume of demodulated signal when half-wave rectifier was replaced with full-wave version. 
+<p align="center">
+<img src="./img/Drawings/crystal_radio_block_diagram.jpg" width="800" height="400"/>
+</p>
 
-Attempt to use simple coil without a tap was made, but was not successful. Impedance of detector stage in such simple configuration seemed to attenuate LC circuit making reception not possible, that is why coil with tapping has been used in working design. 
+Contrary to common believe that crystal radio unit always include RLC parallel resonant circuit, design described here is based on serial resonant RLC circuit consisting of random wire antenna and the coil. Random wire antenna provides capacitance required to form together with the coil serial LC resonant circuit. 
 
-Electronic circuit has been originally described by Andrzej Dabrowski OE1KDA in Swiat Radio [1] and Issue 54 of Library of Polish HAM [2].
+To decrease impact of relatively low detector stage impedance on quality Q of LC circuit, tapped coil is used (autotransformer configuration). 
+In ealry designs both tap and also coil itself was often skipped. In such implementation signal level reaching detector stage would be higher, but there will be very poor or no selectivity. 
+
+Compromise between output signal strenth and selectivity is a main challange of crystal radio design. 
+
+In discussed circuit, crystal has been replaced with germanium diode. Half-wave rectifier has been also replaced with full rectifier configuration in actual implementation. This however did not lead to any improvments in signal quality or strength since benefit of increased output voltage has been ofsetted by incresed load (x2) put by this type of rectifier compared to its half wave variant. This is the reason for leaving half wave recifier on all drawings mentioned in this section.
+
+Experiments were made with use of more common Shotkeys diodes, but were not successful (not possible to detect any signals).
+
+Due to relatively high detector output impedance, the use of high impedance headphones or high input impedance amplifier stage is a must.
+
+Capacitor C, which filters out carrier frequency from baseband signal has been left in the design, but its presence did not make any impact on output signal quality.
+
+This type of crystal radio design requires unbalanced antenna i.e. grounding must be of high quality (resistance of 10-100ohm) in order for radio to operate.
+
+Electronic circuit has been inspired by design described by Andrzej Dabrowski OE1KDA in Swiat Radio [1] / Issue 54 of Library of Polish HAM [2] and 
+more recent work of Bob Culter N7FKI in ARRL QST magazine [9].
+
+Theory of operation has been predicted during Spice simulations. Details of technical design are based on great work of Berthold Bosch, DK6YY  Crystal Set Analysis [5],  Kenneth A. Kuhn, Crystal Radio Engineering [7] and Johen Bauer, Receiving Antennas for the AM Bands = Loop vs. Vertical Wire [8].
+
+## Design Details
+
+### Bandpass filter stage
+
+
+<p align="center">
+<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram.jpg" width="800" height="400"/>
+</p>
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
 
@@ -77,3 +108,8 @@ To further increase amplification LM386 based power amp can be used.
 [2] Library of Polish Radio Amateur, Issue 54: Simple Amateur Receivers, Part I, https://bpk.pzk.org.pl/
 [3] Parallel Tuning Circuit by Marcin Swietlinski SP5NJW, https://sem.pl/sp5jnw/technika/technika.html
 [4] LTspice tutorial - Modeling transformers, https://youtu.be/muUwe8X51oY?si=RbQENTwcjtkwcD5b
+[5] Crystal Set Analysis,Berthold Bosch, DK6YY, https://www.pe2bz.philpem.me.uk/Comm/-%20Receivers/-%20Crystal/Info-902-MiscCrystalHints/Misc/analysis.htm
+[6] Magnetically coupled circuits, Yahia Baghzouz, University of Nevada, http://www.ee.unlv.edu/~eebag/AlexanderCh13.pdf
+[7] Crystal Radio Engineering, Kenneth A. Kuhn, https://www.kennethkuhn.com/students/crystal_radios/
+[8] Receiving Antennas for the AM Bands = Loop vs. Vertical Wire, Johen Bauer, https://www.radiomuseum.org/forumdata/upload/am_receiving_antennas_rel.pdf
+[9] High Sensitivity Crystal Set, Bob Culter, N7FKI, QST January 2007
