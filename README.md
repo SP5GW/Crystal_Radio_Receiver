@@ -5,13 +5,13 @@
 Implementation of crystal radio in its simplest form does not include active amplifier and that is why can function without external power supply. 
 
 <p align="center">
-<img src="./img/Drawings/crystal_radio_simplest_implementation.jpg" width="800" height="400"/>
+<img src="./img/Drawings/crystal_radio_simplest_implementation.jpg" width="600" height="400"/>
 </p>
 
 There are three building blocks of such radio: bandpass filter based on RLC circuit, detector/demodulator stage and high impedance headphones (common today 32ohm headphones can be used as well, but would require amplification stage).
 
 <p align="center">
-<img src="./img/Drawings/crystal_radio_block_diagram.jpg" width="800" height="400"/>
+<img src="./img/Drawings/crystal_radio_block_diagram.jpg" width="600" height="400"/>
 </p>
 
 Contrary to common believe that crystal radio unit always include RLC parallel resonant circuit, design described here is based on serial resonant RLC circuit consisting of random wire antenna and the coil. Random wire antenna provides capacitance required to form together with the coil serial LC resonant circuit. 
@@ -42,7 +42,7 @@ Theory of operation has been predicted during Spice simulations. Details of tech
 
 
 <p align="center">
-<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram.jpg" width="800" height="400"/>
+<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram.jpg" width="600" height="400"/>
 </p>
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
