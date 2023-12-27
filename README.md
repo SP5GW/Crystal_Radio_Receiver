@@ -17,11 +17,11 @@ There are three building blocks of such radio: bandpass filter based on RLC circ
 Contrary to common believe that crystal radio unit always include RLC parallel resonant circuit, design described here is based on serial resonant RLC circuit consisting of random wire antenna and the coil. Random wire antenna provides capacitance required to form together with the coil serial LC resonant circuit. 
 
 To decrease impact of relatively low detector stage impedance on quality Q of LC circuit, tapped coil is used (autotransformer configuration). 
-In ealry designs both tap and also coil itself was often skipped. In such implementation signal level reaching detector stage would be higher, but there will be very poor or no selectivity. 
+In ealry designs both tap and also coil itself was often skipped. In such implementation signal level reaching detector stage would be higher (assuming detector input impedance will be higher then the one of coil), but there will be very poor or no selectivity. 
 
 Compromise between output signal strenth and selectivity is a main challange of crystal radio design. 
 
-In discussed circuit, crystal has been replaced with germanium diode. Half-wave rectifier has been also replaced with full rectifier configuration in actual implementation. This however did not lead to any improvments in signal quality or strength since benefit of increased output voltage has been ofsetted by incresed load (x2) put by this type of rectifier compared to its half wave variant. This is the reason for leaving half wave recifier on all drawings mentioned in this section.
+In discussed circuit, crystal has been replaced with germanium diode. Half-wave rectifier has been also replaced with full rectifier configuration in actual implementation. This however did not lead to any improvments in signal quality or strength since benefit of increased output voltage has been ofsetted by incresed load (x2) put by this type of rectifier on the coil compared to its half wave variant. This is the reason for leaving half wave recifier on all drawings mentioned in this section.
 
 Experiments were made with use of more common Shotkeys diodes, but were not successful (not possible to detect any signals).
 
@@ -40,10 +40,51 @@ Theory of operation has been predicted during Spice simulations. Details of tech
 
 ### Bandpass filter stage
 
+As mentioned earlier in this particular implementation of crystal radio antenna and the coil forms the resonant serial RLC ciruit, which can be modelled as depicted on the drawing below:
 
 <p align="center">
 <img src="./img/Drawings/crystal_radio_simplified_circuit_diagram.jpg" width="500" height="300"/>
 </p>
+
+where [7],[8]:
+U(t) - ideal voltage source - antenna voltage pickup
+Cant - antenna's serial capacitance - dominating part of antenna's reactance if the antenna is
+shorter than one-quarter wavelength
+Lant - antenna's serial inductance -  dominating part of antenna's reactance if antenna is  between onequarter and one-half wavelength at which capacitive reactance dominates. (at one quarter wavelength antenna is resistive)
+next quarter wavelength
+Rrad - The effective radiation resistance associated with the total antenna length. For
+electrically short antennas this may only be a few ohms but can rise to several tens of
+ohms as the antenna length approaches one quarter wavelength.
+Rw   - electrical resistance that is mainly due to the skin effect of the
+conductor (antenna wire) since the frequency is high
+Rg   - ground resistance
+
+In case of random wire antenna for long wave reception antenna's electrical length is typically much smaller then received lambda/4.
+
+In our case the target frequency is f = 225kHz (Polish Radio Warszawa I Broadcast) and coresponding wave lenght:
+
+$lambda = vf* (c/f)$ 
+
+where:
+c  - speed of light in free space: 299 792 458 m/s
+vf - velocity factor for cooper wire: 0.95 (radio wave travels in the wire 5% slower then in free space)
+f  - broadcast frequency
+
+lambda (free space) = 1332,4m (lambda/4=333,1)
+lambda (cooper wire) = 0.95 * 1332,4 = 1265,8m (lambda/4 = 316.5m)
+
+So the total length of our antenna cable (including wire leading to the radio) is 23m, which shorter then lambda/4 for both free space and cooper wire.
+
+Above finding means that antenna's reactance is purly capacitive  and Lant can be skipped from the simplified 
+model of used antenna design.
+
+Due to the short length of antenna cable, wire resistance Rw can also be skipped.
+
+Radiation resistance Rrad for electrically short antennas is typically equal to a few ohms (Rrad can rise to several tens of ohms as the antenna length approaches one quarter wavelength).
+
+Ground Resistance Rg is dominant in the model and can be equal to below 10 ohms in case of excellent grounding and up to 100ohms and more when grounding is poor.
+
+Based on above analisys and actual measurements summarized in table below it is apparent that random wire antenna's equivalent circuit includes capacitance Cant and Rant equal to Rg + Rrad. 
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
 
