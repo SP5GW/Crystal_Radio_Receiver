@@ -47,42 +47,44 @@ As mentioned earlier in this particular implementation of crystal radio antenna 
 </p>
 
 where [7],[8]:
-U(t) - ideal voltage source - antenna voltage pickup
-Cant - antenna's serial capacitance - dominating part of antenna's reactance if the antenna is
-shorter than one-quarter wavelength
-Lant - antenna's serial inductance -  dominating part of antenna's reactance if antenna is  between onequarter and one-half wavelength at which capacitive reactance dominates. (at one quarter wavelength antenna is resistive)
-next quarter wavelength
-Rrad - The effective radiation resistance associated with the total antenna length. For
-electrically short antennas this may only be a few ohms but can rise to several tens of
-ohms as the antenna length approaches one quarter wavelength.
-Rw   - electrical resistance that is mainly due to the skin effect of the
-conductor (antenna wire) since the frequency is high
-Rg   - ground resistance
+      U(t) - ideal voltage source - antenna voltage pickup
+      Cant - antenna's serial capacitance - dominating part of antenna's reactance if the antenna is
+            shorter than one-quarter wavelength
+      Lant - antenna's serial inductance -  dominating part of antenna's reactance if antenna is  between onequarter and one-half wavelength at      which capacitive reactance dominates. (at one quarter wavelength antenna is resistive)
+      next quarter wavelength
+      Rrad - The effective radiation resistance associated with the total antenna length. For
+            electrically short antennas this may only be a few ohms but can rise to several tens of
+      ohms as the antenna length approaches one quarter wavelength.
+      Rw   - electrical resistance that is mainly due to the skin effect of the
+      conductor (antenna wire) since the frequency is high
+      Rg   - ground resistance
 
 In case of random wire antenna for long wave reception antenna's electrical length is typically much smaller then received lambda/4.
 
 In our case the target frequency is f = 225kHz (Polish Radio Warszawa I Broadcast) and coresponding wave lenght:
 
-$lambda = vf* (c/f)$ 
+                                                $lambda = vf* (c/f)$ 
 
 where:
-c  - speed of light in free space: 299 792 458 m/s
-vf - velocity factor for cooper wire: 0.95 (radio wave travels in the wire 5% slower then in free space)
-f  - broadcast frequency
+      c  - speed of light in free space: 299 792 458 m/s
+      vf - velocity factor for cooper wire: 0.95 (radio wave travels in the wire 5% slower then in free space)
+      f  - broadcast frequency
+
+hence:
 
 lambda (free space) = 1332,4m (lambda/4=333,1)
 lambda (cooper wire) = 0.95 * 1332,4 = 1265,8m (lambda/4 = 316.5m)
 
-So the total length of our antenna cable (including wire leading to the radio) is 23m, which shorter then lambda/4 for both free space and cooper wire.
+So the total length of our antenna cable (including wire leading to the radio) is 23m, which is shorter then lambda/4 for both free space and cooper wire.
 
-Above finding means that antenna's reactance is purly capacitive  and Lant can be skipped from the simplified 
+Above finding means that antenna's reactance is purly capacitive  and Lant can be omited from the simplified 
 model of used antenna design.
 
 Due to the short length of antenna cable, wire resistance Rw can also be skipped.
 
 Radiation resistance Rrad for electrically short antennas is typically equal to a few ohms (Rrad can rise to several tens of ohms as the antenna length approaches one quarter wavelength).
 
-Ground Resistance Rg is dominant in the model and can be equal to below 10 ohms in case of excellent grounding and up to 100ohms and more when grounding is poor.
+Ground Resistance Rg is dominant in the model and can be less then 10 ohms in case of excellent grounding and up to 100ohms and more when grounding is poor.
 
 Based on above analisys and actual measurements summarized in table below it is apparent that random wire antenna's equivalent circuit includes capacitance Cant and Rant equal to Rg + Rrad. 
 
