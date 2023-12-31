@@ -90,6 +90,8 @@ The frequency of serial resonance for such circuit can be calculated as:
 
 $fr=1/(2*PI*\sqrt{Cant*Lp})$
 
+$\sqrt{3x-1}+(1+x)^2$
+
 where **Lp** is the inductance of the coil expressed as:
 
 $Lp=L1+L2+2M$
@@ -101,8 +103,6 @@ $M=(Lp-L1-L2)/2$
 For simulation purpuses it is useful to also calculate coupling coefficient **k** as:
 
 $k=M/\sqrt{L1*L2}$
-
-$\sqrt{3x-1}+(1+x)^2$
 
 Actual measurements were summarized below:
 
