@@ -88,7 +88,7 @@ Based on above analisys and actual measurements summarized in table below it is 
 
 The frequency of serial resonance for such circuit can be calculated as:
 
-$fr=1/\sqrt{a}$
+$fr=1/\sqrt{Lp*Cant}$
 
 $fr=(2*Pi*\sqrt{Cant*Lp})*10^-1$
 
