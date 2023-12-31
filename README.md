@@ -90,14 +90,6 @@ The frequency of serial resonance for such circuit can be calculated as:
 
 $fr=\frac{1}{2*\pi*\sqrt{Lp*Cant}}$
 
-$fr=(2*Pi*\sqrt{Cant*Lp})*10^-1$
-
-\( f_r = \frac{1}{2 \pi \sqrt{LC}} \)
-
-$\sqrt{3x-1}+(1+x)^2$
-
-$fr=1/(2*phi*\sqrt{Cant*Lp})$
-
 where **Lp** is the inductance of the coil expressed as:
 
 $Lp=L1+L2+2M$
@@ -118,7 +110,7 @@ Actual measurements were summarized below:
 
 For the coil centrally positioned on the ferrite rod resonance frequency is:
 
-$fr=1/(6.28*\sqrt{1.58*10-3*281*20^-12})=239kHz$
+$fr=\frac{1}{6.28*\sqrt{1.58*10-3*281*20^-12}}=239kHz$
 
 It was not possible to increase coil's inductance Lp by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to Lp to bring resonance frequency fr to desired 225KHz. See Spice simulation below:
 
