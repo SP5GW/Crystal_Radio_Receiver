@@ -54,7 +54,7 @@ where [7],[8]:
 * 	**Rw**   - electrical resistance that is mainly due to the skin effect of the conductor (antenna wire) since the frequency is high
 * 	**Rg**   - ground resistance
 
-In case of random wire antenna for long wave reception, antenna's electrical length is typically much smaller then received lambda/4 coresponding to received frequency.
+In case of random wire antenna for long wave reception, antenna's electrical length is typically much smaller then lambda/4 coresponding to received frequency.
 
 In our case the target frequency is f = 225kHz (Polish Radio Warszawa I Broadcast) and coresponding wave length:
 
@@ -82,6 +82,10 @@ Radiation resistance **Rrad** for electrically short antennas is typically equal
 Ground Resistance **Rg** is dominant in the model and can be less then 10 ohms in case of excellent grounding and up to 100ohms and more when grounding is poor.
 
 Based on above analisys and actual measurements summarized in table below it is apparent that random wire antenna's equivalent circuit can be simplified to include only capacitance **Cant** and **Rant** equal to Rg + Rrad. 
+
+<p align="center">
+<img src="./meas/RandomWireAntennaImpedance.png" width="450" height="300"/>
+</p>
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
 

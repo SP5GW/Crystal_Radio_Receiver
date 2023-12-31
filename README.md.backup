@@ -54,7 +54,7 @@ where [7],[8]:
 * 	**Rw**   - electrical resistance that is mainly due to the skin effect of the conductor (antenna wire) since the frequency is high
 * 	**Rg**   - ground resistance
 
-In case of random wire antenna for long wave reception, antenna's electrical length is typically much smaller then received lambda/4 coresponding to received frequency.
+In case of random wire antenna for long wave reception, antenna's electrical length is typically much smaller then lambda/4 coresponding to received frequency.
 
 In our case the target frequency is f = 225kHz (Polish Radio Warszawa I Broadcast) and coresponding wave length:
 
