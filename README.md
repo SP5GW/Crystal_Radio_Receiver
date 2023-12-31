@@ -92,6 +92,8 @@ $fr=1/[2*Pi*\sqrt{Lp*Cant}]$
 
 $fr=(2*Pi*\sqrt{Cant*Lp})*10^-1$
 
+\( f_r = \frac{1}{2 \pi \sqrt{LC}} \)
+
 $\sqrt{3x-1}+(1+x)^2$
 
 $fr=1/(2*phi*\sqrt{Cant*Lp})$
