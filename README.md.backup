@@ -88,7 +88,7 @@ Based on above analisys and actual measurements summarized in table below it is 
 
 The frequency of serial resonance for such circuit can be calculate as:
 
-$fr=1/2*PI*/sqrt(Cant*Lp)$
+$fr=1/2*PI*sqrt{Cant*Lp}$
 
 where **Lp** is the inductance of the coil expressed as:
 
@@ -100,13 +100,27 @@ $M=(Lp-L1-L2)/2$
 
 For simulation purpuses it is useful to also calculate coupling coefficient **k** as:
 
-$k=M//sqrt(L1*L2)$
+$k=M/sqrt{L1*L2}$
 
 Actual measurements were summarized below:
 
 <p align="center">
-<img src="./" width="450" height="300"/>
+<img src="./meas/CoilInductancesMeasurements.png" width="400" height="200"/>
 </p>
+
+For the coil centrally positioned on the ferrite rod resonance frequency is:
+
+$fr=1/(6.28*sqrt{1.58*10-3*281*20^-12})=239kHz
+
+It was not possible to increase coil's inductance Lp by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to Lp to bring resonance frequency fr to desired 225KHz. See Spice simulation below:
+
+<p align="center">
+<img src="./sim/BandpassFilterStage_Circuit.png" width="300" height="200"/>
+<p align="center">
+<img src="./sim/BandpassFilterStage_FrequencyResponse.png" width="600" height="300"/>
+</p>
+</p>
+
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
 
