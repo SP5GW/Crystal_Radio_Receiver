@@ -58,7 +58,7 @@ In case of random wire antenna for long wave reception, antenna's electrical len
 
 In our case the target frequency is f = 225kHz (Polish Radio Warszawa I Broadcast) and coresponding wave length:
 
-$'lambda = vf* (c/f)'$ 
+$lambda = vf* (c/f)$ 
 
 where:
 * **c**  - speed of light in free space: 299 792 458 m/s
@@ -84,6 +84,28 @@ Based on above analisys and actual measurements summarized in table below it is 
 
 <p align="center">
 <img src="./meas/RandomWireAntennaImpedance.png" width="450" height="300"/>
+</p>
+
+The frequency of serial resonance for such circuit can be calculate as:
+
+$fr=1/2*PI*/sqrt(Cant*Lp)$
+
+where **Lp** is the inductance of the coil expressed as:
+
+$Lp=L1+L2+2M$
+
+**Lp**, **L1** and **L2** can be directly measured with NanoVNA or another inductance meter while M can be calculated as:
+
+$M=(Lp-L1-L2)/2$
+
+For simulation purpuses it is useful to also calculate coupling coefficient **k** as:
+
+$k=M//sqrt(L1*L2)$
+
+Actual measurements were summarized below:
+
+<p align="center">
+<img src="./meas/CoilInductancesMeasurements.png" width="450" height="300"/>
 </p>
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
