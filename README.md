@@ -92,6 +92,8 @@ $fr=(2*Pi*\sqrt{Cant*Lp})*10^-1$
 
 $\sqrt{3x-1}+(1+x)^2$
 
+$fr=1/(2*phi*\sqrt{Cant*Lp})$
+
 where **Lp** is the inductance of the coil expressed as:
 
 $Lp=L1+L2+2M$
