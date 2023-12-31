@@ -100,7 +100,9 @@ $M=(Lp-L1-L2)/2$
 
 For simulation purpuses it is useful to also calculate coupling coefficient **k** as:
 
-$k=M/sqrt{L1*L2}$
+$k=M/\sqrt{L1*L2}$
+
+$\sqrt{3x-1}+(1+x)^2$
 
 Actual measurements were summarized below:
 

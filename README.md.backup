@@ -86,7 +86,7 @@ Based on above analisys and actual measurements summarized in table below it is 
 <img src="./meas/RandomWireAntennaImpedance.png" width="450" height="300"/>
 </p>
 
-The frequency of serial resonance for such circuit can be calculate as:
+The frequency of serial resonance for such circuit can be calculated as:
 
 $fr=1/(2*PI*sqrt{Cant*Lp})$
 
