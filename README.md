@@ -58,7 +58,7 @@ In case of random wire antenna for long wave reception, antenna's electrical len
 
 In our case the target frequency is f = 225kHz (Polish Radio Warszawa I Broadcast) and coresponding wave length:
 
-	                                                      $\lambda = vf* (c/f)$ 
+$'lambda = vf* (c/f)'$ 
 
 where:
 * **c**  - speed of light in free space: 299 792 458 m/s
