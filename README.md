@@ -110,7 +110,7 @@ Actual measurements were summarized below:
 
 For the coil centrally positioned on the ferrite rod resonance frequency is:
 
-$fr=\frac{1}{6.28*\sqrt{1.58 \times 10^{-3} \times 281 \times 10^{-12}}}$
+$fr=\frac{1}{6.28*\sqrt{1.58 \times 10^{-3} \times 281 \times 10^{-12}}}=238.72kHz$
 
 It was not possible to increase coil's inductance Lp by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to Lp to bring resonance frequency fr to desired 225KHz. See Spice simulation below:
 
