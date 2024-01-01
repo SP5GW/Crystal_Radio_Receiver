@@ -92,15 +92,15 @@ $fr=\frac{1}{2*\pi*\sqrt{Lp*Cant}}$
 
 where **Lp** is the inductance of the coil expressed as:
 
-$Lp=L1+L2+2M$
+$Lp=Ls+Lp_s+2M$
 
 **Lp**, **L1** and **L2** can be directly measured with NanoVNA or another inductance meter while M can be calculated as:
 
-$M=(Lp-L1-L2)/2$
+$M=(Lp-Ls-Lp_s)/2$
 
 For simulation purpuses it is useful to also calculate coupling coefficient **k** as:
 
-$k=M/\sqrt{L1*L2}$
+$k=M/\sqrt{Ls*Lp_s}$
 
 Actual measurements were summarized below:
 
@@ -115,9 +115,7 @@ $fr=\frac{1}{6.28*\sqrt{1.58 \times 10^{-3} \times 281 \times 10^{-12}}}=238.72k
 It was not possible to increase coil's inductance Lp by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to Lp to bring resonance frequency fr to desired 225KHz. See Spice simulation below:
 
 <p align="center">
-<img src="./sim/BandpassFilterStage_Circuit.png" width="300" height="200"/>
-<p align="center">
-<img src="./sim/BandpassFilterStage_FrequencyResponse.png" width="600" height="300"/>
+<img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp.png" width="700" height="400"/>
 </p>
 </p>
 
