@@ -112,15 +112,17 @@ For the coil centrally positioned on the ferrite rod resonance frequency is:
 
 $fr=\frac{1}{6.28*\sqrt{1.58 \times 10^{-3} \times 281 \times 10^{-12}}}=238.72kHz$
 
-It was not possible to increase coil's inductance Lp by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to Lp to bring resonance frequency fr to desired 225KHz. See Spice simulation below:
+It was not possible to increase coil's inductance **Lp** by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to Lp to bring resonance frequency fr to desired 225KHz. See Spice simulation below:
 
 <p align="center">
 <img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp.png" width="700" height="400"/>
 </p>
-</p>
+
+### Detector stage
 
 
 
+## Implementation
 
 Design of the coil is critical for entire circuit to work. This element has been made using 0.35mm emalia coated wire. Windings were made on paper tube put on ferrite rod from old radio receiver. Position of the coil can be adjusted by sliding to both sides of the rod allowing for limited resonance frequency adjustment. Tuning is made by the ear for strongest acusting signal. Coild winding configuration: 50 windings - 5cm long tap - 100 windings. All windings are made in the same direction. Parasitic capacitance of the coil allowed to put LC tank into resonance closed to target 225kHz frequency without connecting any capacitor. To bring resonance frequency closer to 225kHz, the 47pF ceramic capacitor was put parallel to the coil. Decreasing this capacitor to smaller value did not increase signal level at detector output, capacitor increase led to decrease in volume, which suggest that selected capacitance value is optimal for this particular design.
 
