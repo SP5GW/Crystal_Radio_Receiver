@@ -129,7 +129,7 @@ This is the reason for both the need for best quality grounding (i.e. lowest pos
 and also the use of autotransformer to connect detector stage to the RLC circuit.
 
 <p align="center">
-<img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp_Det_Res.png" width="700" height="600"/>
+<img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp_Det_Res.png" width="800" height="600"/>
 </p>
 
 Autotransformer transforms input impedance of the detector **Rdet** to larger value of **Rdet'**. In situation where reactace of **XL1** is much greater then **Rdet'** impedance transformation follows the formula for ideal transformer. 
