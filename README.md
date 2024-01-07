@@ -1,5 +1,9 @@
 # Crystal Radio Receiver
 
+<p align="center">
+<img src="./img/ReceiverPhotos/IMG_1049_radio_internal_lm386.jpg" width="700" height="600"/>
+</p>
+
 ## Design Overview
 
 Implementation of crystal radio in its simplest form does not include active amplifier and that is why can function without external power supply. 
@@ -213,6 +217,14 @@ Signal at the output of transistor amplifier (volume control not set to maximum)
 
 <p align="center">
 <img src="./meas/AM_Demodulated_Amp_Out.png" width="300" height="300"/>
+</p>
+
+Fully finished crystal radio including LM386 amplifier:
+
+<p align="center">
+<img src="./img/ReceiverPhotos/IMG_1049_radio_internal_lm386.jpg" width="700" height="600"/>
+<img src="./img/ReceiverPhotos/IMG_1051_front.jpg" width="700" height="600"/>
+<img src="./img/ReceiverPhotos/IMG_1054_back.jpg" width="700" height="600"/>
 </p>
 
 ## Resources
