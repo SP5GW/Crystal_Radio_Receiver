@@ -223,8 +223,8 @@ Fully finished crystal radio including LM386 amplifier:
 
 <p align="center">
 <img src="./img/ReceiverPhotos/IMG_1049_radio_internal_lm386.jpg" width="700" height="600"/>
-<img src="./img/ReceiverPhotos/IMG_1051_front.jpg" width="700" height="300"/>
-<img src="./img/ReceiverPhotos/IMG_1054_back.jpg" width="700" height="300"/>
+<img src="./img/ReceiverPhotos/IMG_1051_front.jpg" width="700" height="250"/>
+<img src="./img/ReceiverPhotos/IMG_1054_back.jpg" width="700" height="250"/>
 </p>
 
 ## Resources
