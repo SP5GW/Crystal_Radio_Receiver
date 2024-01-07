@@ -136,12 +136,14 @@ and also the use of autotransformer to connect detector stage to the RLC circuit
 
 Autotransformer transforms input impedance of the detector **Rdet** to larger value of **Rdet'**. In situation where reactace of **XL1** is much greater then **Rdet'** impedance transformation follows the formula for ideal transformer. 
 
-$Zdet'/Zdet=N^2$ where N=Np/Ns=sqrt(Lp/Ls)$
+$Rdet'/Rdet=N^2$ where $N=Np/Ns=sqrt(Lp/Ls)$
 
-In case of this design however impedance transformation is "weakened" by the fact that XL1  is of similar value as transformed impedance of the detector stage (for fr=225kHz the impedance XL1=2.5kohm). For lower values of **Rdet**, detectors input impedance shounts also X1, which also leads to slight shift upwords of the circuit's resonance frequency.
+In case of this design however impedance transformation is "weakened" by the fact that **XL1**  is of similar value as transformed impedance of the detector stage (for fr=225kHz the impedance XL1=2.5kohm). For lower values of **Rdet**, detectors input impedance shounts also **XL1**, which also leads to slight shift upwords of the circuit's resonance frequency.
 
-When detector stage is connected to the tap of the coil the RLC Q-factor decreases more then twice (i.e. decrease from 11.6 to 4.6), which coresponds to circuit's bandwidth increase from about 20kHz to 51kHz. This selectivity decrease makes design less dependent on exact value of antenna capacitance. AM signal from Polish Radio occupies only about 12kHz in bandwidth (with center frequency fr=225Khz)
-
+When detector stage is connected to the tap of the coil the RLC Q-factor decreases more then twice (i.e. decrease from 11.6 to 4.6), which coresponds to circuit's bandwidth increase from about 20kHz to 51kHz. This selectivity decrease makes design less dependent on exact value of antenna capacitance. As can be seen on the picture below the AM signal from Polish Radio occupies only about 12kHz in bandwidth (with center frequency fr=225Khz)
+<p align="center">
+<img src="./img/SignalStrength/polish_radio_1_signal_strength_v2.png" width="700" height="600"/>
+</p>
 
 ## Implementation
 
