@@ -166,7 +166,7 @@ Full Crystal Radio simulation circuit can be seen below:
 ## Implementation
 
 <p align="center">
-<img src="./img/Drawings/Detector_Radio_With_Amp_Stage.png" width="700" height="600"/>
+<img src="./img/Drawings/Detector_Radio_With_Amp_Stage.png" width="800" height="600"/>
 </p>
 
 
