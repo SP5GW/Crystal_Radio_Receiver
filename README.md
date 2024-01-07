@@ -114,20 +114,33 @@ For the coil centrally positioned on the ferrite rod resonance frequency is:
 
 $fr=\frac{1}{6.28*\sqrt{1.58 \times 10^{-3} \times 281 \times 10^{-12}}}=238.72kHz$
 
-It was not possible to increase coil's inductance **Lp** by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to **Lp** to bring resonance frequency **fr** to desired 225KHz. See Spice simulation below:
+It was not possible to increase coil's inductance **Lp** by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to **Lp** to bring resonance frequency **fr** to desired 225KHz. 
+See Spice simulation below:
 
 <p align="center">
 <img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp_Cap_Add.png" width="700" height="600"/>
 </p>
 
-Input impedance of detector stage together with antenna system resistance **Rant** directly impacts Q-factor of RLC resonance circuit.
+Input impedance of the detector stage together with antenna system resistance **Rant** directly impacts Q-factor of RLC resonance circuit.
+This is the reason for both the need for best quality grounding (i.e. lowest possible **Rg**) 
 
-This is the reason for both the need for best quality grounding (i.e. lowest possible **Rg**) and also use of autotransformer to connect detector stage to the RLC circuit. Autotransformer transforms input impedance of the detector **Rdet** to larger value of **Rdet'**. In situation where reactace of **XL1** is much greater then **Rdet'** impedance transformation is done according to formula for ideal transformer:
+<p align="center">
+<img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp_Ant_Res.png " width="700" height="600"/>
+</p>
+
+and also the use of autotransformer to connect detector stage to the RLC circuit.
+
+<p align="center">
+<img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp_Det_Res.png" width="700" height="600"/>
+</p>
+
+Autotransformer transforms input impedance of the detector **Rdet** to larger value of **Rdet'**. In situation where reactace of **XL1** is much greater then **Rdet'** impedance transformation follows the formula for ideal transformer. 
 
 $Zdet'/Zdet=N^2$ where N=Np/Ns=sqrt(Lp/Ls)$
 
-In case of this particular design for the frequency of fr=225kHz the impedance XL1=2.5kohm is causing N to be much lower then in case of ideal autotransformer (overall impedance of XL1 II Zdet' is lowered by XL1)
+In case of this design however impedance transformation is "weakened" by the fact that XL1  is of similar value as transformed impedance of the detector stage (for fr=225kHz the impedance XL1=2.5kohm). For lower values of **Rdet**, detectors input impedance shounts also X1, which also leads to slight shift upwords of the circuit's resonance frequency.
 
+When detector stage is connected to the tap of the coil the RLC Q-factor decreases more then twice (i.e. decrease from 11.6 to 4.6), which coresponds to circuit's bandwidth increase from about 20kHz to 51kHz. This selectivity decrease makes design less dependent on exact value of antenna capacitance. AM signal from Polish Radio occupies only about 12kHz in bandwidth (with center frequency fr=225Khz)
 
 
 ## Implementation
