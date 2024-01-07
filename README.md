@@ -140,9 +140,23 @@ $Rdet'/Rdet=N^2$ where $N=Np/Ns=sqrt(Lp/Ls)$
 
 In case of this design however impedance transformation is "weakened" by the fact that **XL1**  is of similar value as transformed impedance of the detector stage (for fr=225kHz the impedance XL1=2.5kohm). For lower values of **Rdet**, detectors input impedance shounts also **XL1**, which also leads to slight shift upwords of the circuit's resonance frequency.
 
-When detector stage is connected to the tap of the coil the RLC Q-factor decreases more then twice (i.e. decrease from 11.6 to 4.6), which coresponds to circuit's bandwidth increase from about 20kHz to 51kHz. This selectivity decrease makes design less dependent on exact value of antenna capacitance. As can be seen on the picture below the AM signal from Polish Radio occupies only about 12kHz in bandwidth (with center frequency fr=225Khz)
+When detector stage is connected to the tap of the coil the RLC Q-factor decreases more then twice (i.e. decrease from 11.6 to 4.6), which coresponds to circuit's bandwidth increase from about 20kHz to 51kHz. This selectivity decrease makes design less dependent on exact value of antenna capacitance. 
+As can be seen on the picture below the AM signal from Polish Radio occupies only about 12kHz in bandwidth (with center frequency fr=225Khz)
+
 <p align="center">
 <img src="./img/SignalStrength/polish_radio_1_signal_strength_v2.png" width="700" height="600"/>
+</p>
+
+As mentioned earlier attempt to replace Germanium AAP153 diode with Shotkey equivalent was not successful. 
+
+Use of full wave rectifier in the design does not lead to increase signal volume compared to scenario when half wave rectifier is used. This is due to twice as low input impedance of full wave rectiver compared to its half wave variant.
+
+When no external power source is available (aplifier based on T1/T2 is not used), high impedance headphones are needed. This is due high impedance of detector output.
+
+Aplifier based on T1/T2 allows for use of regular 32ohm headphones, but this stage requires external power supply. To decrease amount high frequencies in signal reaching headphones RC low pass filter has been added in front of transistor aplification stage.
+
+<p align="center">
+<img src="./sim/CrystalRadioLowPassFilter.png" width="700" height="600"/>
 </p>
 
 ## Implementation
