@@ -117,7 +117,7 @@ $fr=\frac{1}{6.28*\sqrt{1.58 \times 10^{-3} \times 281 \times 10^{-12}}}=238.72k
 It was not possible to increase coil's inductance **Lp** by repositioning it on the rod. That is why 47pF additional capacitor was added in parallel to **Lp** to bring resonance frequency **fr** to desired 225KHz. See Spice simulation below:
 
 <p align="center">
-<img src="BandpassFilterStage_Circuit_and_Freq_Resp_Cap_Add.png" width="700" height="600"/>
+<img src="./sim/BandpassFilterStage_Circuit_and_Freq_Resp_Cap_Add.pngBandpassFilterStage_Circuit_and_Freq_Resp_Cap_Add.png" width="700" height="600"/>
 </p>
 
 Input impedance of detector stage together with antenna system resistance **Rant** directly impacts Q-factor of RLC resonance circuit.
