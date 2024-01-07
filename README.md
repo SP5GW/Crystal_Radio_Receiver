@@ -2,7 +2,7 @@
 
 <p align="center">
 <img src="./img/ReceiverPhotos/IMG_1049_radio_internal_lm386.jpg" width="700" height="600"/>
-</p>
+</p> 
 
 ## Design Overview
 
