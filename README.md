@@ -195,7 +195,7 @@ Quality of earthing is critical for crystal radio to operate at all!
 
 To increase signal output and allow for use of 32ohm modern headphones simple 2 transistor amplifier has been added.
 
-In actual design another amplification stage based on LM386 circuit was added. LM386 is driven directly from the output of transistor aplifier and connects to 8ohm 5W speaker.
+In actual design another amplification stage based on LM386 circuit was added (AVT794 kit). LM386 is driven directly from the output of transistor aplifier and connects to 8ohm 5W speaker.
 
 Acustic signal at the output of the detector stage is biased towards higher frequencies. To correct for it low-pass filter is introduced together with volume control. 
 
