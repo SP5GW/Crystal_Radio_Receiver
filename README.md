@@ -45,7 +45,7 @@ Theory of operation has been predicted during Spice simulations. Details of tech
 As mentioned earlier in this particular implementation of crystal radio, antenna and the coil form the resonant serial RLC ciruit, which can be modelled as depicted on the drawing below:
 
 <p align="center">
-<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram.jpg" width="450" height="300"/>
+<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram_fig1.jpg" width="450" height="300"/>
 </p>
 
 where [7],[8]:
@@ -84,10 +84,16 @@ According to the property of reciprocity every antenna can be used to both trans
 
 Ground Resistance **Rg** is dominant in the model and can be less then 10 ohms in case of excellent grounding and up to 100ohms and more when grounding is poor.
 
-Based on above analisys and actual measurements summarized in table below it becomes apparent that random wire antenna's equivalent circuit can be simplified to include only capacitance **Cant** and **Rant** equal to Rg + Rrad. 
+Based on above analysis and actual measurements summarized in table below it becomes apparent that random wire antenna's equivalent circuit can be simplified to include only capacitance **Cant** and **Rant** equal to Rg + Rrad.
 
 <p align="center">
 <img src="./meas/RandomWireAntennaImpedance.png" width="450" height="300"/>
+</p>
+
+Equivalent circuit reflecting above assumptions:
+
+<p align="center">
+<img src="./img/Drawings/crystal_radio_simplified_circuit_diagram_fig2.jpg" width="450" height="300"/>
 </p>
 
 The frequency of serial resonance for such circuit can be calculated as:
