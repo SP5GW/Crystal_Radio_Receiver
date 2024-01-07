@@ -38,8 +38,6 @@ Theory of operation has been predicted during Spice simulations. Details of tech
 
 ## Design Details
 
-### Bandpass filter stage
-
 As mentioned earlier in this particular implementation of crystal radio, antenna and the coil form the resonant serial RLC ciruit, which can be modelled as depicted on the drawing below:
 
 <p align="center">
@@ -157,6 +155,12 @@ Aplifier based on T1/T2 allows for use of regular 32ohm headphones, but this sta
 
 <p align="center">
 <img src="./sim/CrystalRadioLowPassFilter.png" width="700" height="600"/>
+</p>
+
+Full Crystal Radio simulation circuit can be seen below:
+
+<p align="center">
+<img src="./sim/CopleteCrystalRadioSiimulation.png" width="700" height="600"/>
 </p>
 
 ## Implementation
