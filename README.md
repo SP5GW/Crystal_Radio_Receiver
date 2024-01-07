@@ -181,6 +181,10 @@ Mechanical mounting of the coil can be difficult. The most elegant would be to 3
 <img src="./img/ReceiverPhotos/IMG_1013_coil_mount.jpg" width="300" height="300"/>
 </p>
 
+<p align="center">
+<img src="./img/ReceiverPhotos/IMG_1019_radio_internal.jpg" width="600" height="400"/>
+</p>
+
 Special thanks  to SP5JNW and Fesh Electronics for great explanation of theory behind LC and autotransformer design [3] and time taken to anwser my emails.
 
 Quality of earthing is critical for crystal radio to operate at all!
